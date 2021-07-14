@@ -1,0 +1,20 @@
+hostname:
+node01
+
+IP:
+192.168.10.46
+
+Disk:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        12G  9.9G  1.5G  88% /
+devtmpfs        3.8G     0  3.8G   0% /dev
+tmpfs           3.9G   92K  3.9G   1% /dev/shm
+tmpfs           3.9G  8.5M  3.9G   1% /run
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mmcblk0p6  253M   48M  205M  19% /boot
+tmpfs           788M     0  788M   0% /run/user/1000
+
+RAM
+7.7Gi
+

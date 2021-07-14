@@ -1,0 +1,9 @@
+- name: Install good to have software and dependencies
+  apt: 
+    update_cache: yes
+    state: latest
+    name:
+      byobu,
+      python3-pip,
+      git,
+      nmon

@@ -1,0 +1,44 @@
+hostname:
+nessie
+
+IP:
+192.168.10.63
+
+Disk:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1,9G     0  1,9G   0% /dev
+tmpfs           383M  2,1M  381M   1% /run
+/dev/sda2       219G  143G   66G  69% /
+tmpfs           1,9G  112K  1,9G   1% /dev/shm
+tmpfs           5,0M  4,0K  5,0M   1% /run/lock
+tmpfs           1,9G     0  1,9G   0% /sys/fs/cgroup
+/dev/loop1      219M  219M     0 100% /snap/gnome-3-34-1804/72
+/dev/loop2      162M  162M     0 100% /snap/gnome-3-28-1804/128
+/dev/loop4      640K  640K     0 100% /snap/gnome-logs/103
+/dev/loop3      219M  219M     0 100% /snap/gnome-3-34-1804/66
+/dev/loop5       66M   66M     0 100% /snap/gtk-common-themes/1515
+/dev/loop6      384K  384K     0 100% /snap/gnome-characters/708
+/dev/loop7       56M   56M     0 100% /snap/core18/2066
+/dev/loop8      163M  163M     0 100% /snap/gnome-3-28-1804/145
+/dev/loop9      1,0M  1,0M     0 100% /snap/gnome-logs/100
+/dev/loop10      56M   56M     0 100% /snap/core18/2074
+/dev/loop11     2,3M  2,3M     0 100% /snap/gnome-system-monitor/157
+/dev/loop12     2,5M  2,5M     0 100% /snap/gnome-calculator/826
+/dev/loop13     2,5M  2,5M     0 100% /snap/gnome-calculator/884
+/dev/loop15     100M  100M     0 100% /snap/core/11187
+/dev/loop17      65M   65M     0 100% /snap/gtk-common-themes/1514
+/dev/sda1       511M   14M  498M   3% /boot/efi
+overlay         219G  143G   66G  69% /var/lib/docker/overlay2/48420746885ea6c0435033ac5d53c642d289d9cdf60a30f495505b7b8ac04e81/merged
+shm              64M     0   64M   0% /var/lib/docker/containers/fd956dda7b4d33dbd1067556d4e087fa7fbcc503af3b95163f600726e237c94e/mounts/shm
+tmpfs           383M  180K  383M   1% /run/user/1000
+/dev/sdb1       2,7T  1,8T  776G  71% /media/oskar/cd97548d-15eb-4c7d-9091-2149f4a7c8ad2
+/dev/loop18     4,7M  4,7M     0 100% /snap/remote-touchpad/148
+/dev/loop19     100M  100M     0 100% /snap/core/11316
+/dev/loop14     768K  768K     0 100% /snap/gnome-characters/723
+/dev/loop0       62M   62M     0 100% /snap/core20/1026
+/dev/loop20     2,5M  2,5M     0 100% /snap/gnome-system-monitor/160
+/dev/loop21     244M  244M     0 100% /snap/gnome-3-38-2004/39
+
+RAM
+3,7G
+

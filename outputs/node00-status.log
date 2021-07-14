@@ -1,0 +1,21 @@
+hostname:
+node00
+
+IP:
+192.168.10.65
+
+Disk:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        12G  7.9G  3.5G  70% /
+devtmpfs        3.8G     0  3.8G   0% /dev
+tmpfs           3.9G   92K  3.9G   1% /dev/shm
+tmpfs           3.9G   17M  3.9G   1% /run
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mmcblk0p6  253M   48M  205M  19% /boot
+tmpfs           788M     0  788M   0% /run/user/1000
+overlay          12G  7.9G  3.5G  70% /var/lib/docker/overlay2/37362246ba80113281f1bb9956baa7bf5b7b27fe343785fb98cfc81c7a59d9e8/merged
+
+RAM
+7.7Gi
+
