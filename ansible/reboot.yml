@@ -1,0 +1,8 @@
+- name: Set up compute
+  hosts: 
+    all
+  user: pi
+  become: yes
+  tasks:
+    - name:
+      reboot:

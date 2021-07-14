@@ -1,0 +1,70 @@
+- name: Set up compute
+  hosts: 
+    all
+  user: pi
+  become: yes
+  pre_tasks:
+    - name: apt update
+      apt:
+        cache_valid_time: 3600
+        update_cache: yes
+      when: ansible_os_family == "Debian"
+
+    - name: delete erroneus crontab-file file
+      file:
+        path: /etc/cron.d/crontab-file
+        state: absent
+  tasks:
+    - include_tasks: basic/basic.yml
+
+    - name: "add starter cron job"
+      cron:
+        cron_file: crontab-file
+        user: pi
+        job: /home/pi/01-workspace/00-temp/tr3s2/starter.sh 2>&1>> /home/pi/01-workspace/00-temp/tr3s2/log
+
+    - name: "change cron starter job shell variable"
+      cron:
+        cron_file: crontab-file
+        user: pi
+        name: SHELL
+        env: yes
+        value: /bin/bash
+
+    - name: "add announce-cron job"
+      cron:
+        cron_file: announce-node
+        user: pi
+        job: /home/pi/01-workspace/00-temp/tr3s2/announcer.sh 2>&1>> /home/pi/01-workspace/00-temp/tr3s2/log
+
+    - name: "change cron shell variable on announce node"
+      cron:
+        cron_file: announce-node
+        user: pi
+        name: SHELL
+        env: yes
+        value: /bin/bash
+
+    - name: transfer tr3s to rpis
+      copy:
+        src: ~/01-workspace/00-temp/tr3s2/
+        dest: /home/pi/01-workspace/00-temp/tr3s2/
+        owner: pi
+        group: pi
+        mode: "755"
+
+    - name: create n1 directory
+      file:
+        path: /home/pi/01-workspace/00-temp/tr3s/n1
+        state: directory
+        owner: pi
+        group: pi
+        mode: "755"
+
+    - name: create scratch directory
+      file:
+        path: /home/pi/01-workspace/00-temp/tr3s/scratch
+        state: directory
+        owner: pi
+        group: pi
+        mode: "755"
